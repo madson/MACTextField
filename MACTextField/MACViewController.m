@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIView *view = [self.view viewWithTag:0];
+    
 }
 
 - (void)didReceiveMemoryWarning

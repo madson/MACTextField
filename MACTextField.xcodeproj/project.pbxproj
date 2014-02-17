@@ -21,6 +21,7 @@
 		F39292C418B27DE900145433 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39292A618B27DE900145433 /* UIKit.framework */; };
 		F39292CC18B27DE900145433 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F39292CA18B27DE900145433 /* InfoPlist.strings */; };
 		F39292CE18B27DE900145433 /* MACTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F39292CD18B27DE900145433 /* MACTextFieldTests.m */; };
+		F39292DF18B280B400145433 /* MACTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F39292DE18B280B400145433 /* MACTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		F39292C918B27DE900145433 /* MACTextFieldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MACTextFieldTests-Info.plist"; sourceTree = "<group>"; };
 		F39292CB18B27DE900145433 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F39292CD18B27DE900145433 /* MACTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MACTextFieldTests.m; sourceTree = "<group>"; };
+		F39292DD18B280B400145433 /* MACTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACTextField.h; sourceTree = "<group>"; };
+		F39292DE18B280B400145433 /* MACTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				F39292B818B27DE900145433 /* MACViewController.m */,
 				F39292BA18B27DE900145433 /* Images.xcassets */,
 				F39292A918B27DE900145433 /* Supporting Files */,
+				F39292DD18B280B400145433 /* MACTextField.h */,
+				F39292DE18B280B400145433 /* MACTextField.m */,
 			);
 			path = MACTextField;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F39292B318B27DE900145433 /* MACAppDelegate.m in Sources */,
+				F39292DF18B280B400145433 /* MACTextField.m in Sources */,
 				F39292AF18B27DE900145433 /* main.m in Sources */,
 				F39292B918B27DE900145433 /* MACViewController.m in Sources */,
 			);
