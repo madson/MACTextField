@@ -27,25 +27,28 @@
                                              selector:@selector(textFieldTextDidChange:)
                                                  name:UITextFieldTextDidChangeNotification
                                                object:self];
+    
+    if (self.text)
+    {
+        [self textFieldTextDidChange:nil];
+    }
 }
 
-- (void)textFieldTextDidChange:(NSNotification *)notification
+- (void)textFieldTextDidChange:(NSNotification *)sender
 {
-    UITextField *tf = (UITextField *)notification.object;
-    
-    if ([tf.text isEqualToString:[NSString string]])
+    if ([self.text isEqualToString:[NSString string]])
     {
         [_upperLabel removeFromSuperview];
-        tf.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+        self.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     }
     else
     {
-        tf.contentVerticalAlignment = UIControlContentVerticalAlignmentBottom;
-        [tf layoutIfNeeded];
+        self.contentVerticalAlignment = UIControlContentVerticalAlignmentBottom;
+        [self layoutIfNeeded];
         
         if (_topPlaceholderText == nil)
         {
-            self.topPlaceholderText = tf.placeholder;
+            self.topPlaceholderText = self.placeholder;
         }
         
         if (_upperLabel == nil)
@@ -69,6 +72,13 @@
             }];
         }
     }
+}
+
+- (void)setText:(NSString *)text
+{
+    [super setText:text];
+    
+    [self textFieldTextDidChange:nil];
 }
 
 @end

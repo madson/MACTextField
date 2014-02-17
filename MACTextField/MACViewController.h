@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class MACTextField;
+
 @interface MACViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet MACTextField *textField;
+
+- (IBAction)doAction:(id)sender;
 
 @end

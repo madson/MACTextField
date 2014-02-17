@@ -7,6 +7,7 @@
 //
 
 #import "MACViewController.h"
+#import "MACTextField.h"
 
 @interface MACViewController ()
 
@@ -19,14 +20,17 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    UIView *view = [self.view viewWithTag:0];
-    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)doAction:(id)sender
+{
+    _textField.text = @"New text!";
 }
 
 @end
