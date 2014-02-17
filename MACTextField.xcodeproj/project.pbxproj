@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F39292A318B27DE900145433 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39292A218B27DE900145433 /* Foundation.framework */; };
+		F39292A518B27DE900145433 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39292A418B27DE900145433 /* CoreGraphics.framework */; };
+		F39292A718B27DE900145433 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39292A618B27DE900145433 /* UIKit.framework */; };
+		F39292AD18B27DE900145433 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F39292AB18B27DE900145433 /* InfoPlist.strings */; };
+		F39292AF18B27DE900145433 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F39292AE18B27DE900145433 /* main.m */; };
+		F39292B318B27DE900145433 /* MACAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F39292B218B27DE900145433 /* MACAppDelegate.m */; };
+		F39292B618B27DE900145433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39292B418B27DE900145433 /* Main.storyboard */; };
+		F39292B918B27DE900145433 /* MACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39292B818B27DE900145433 /* MACViewController.m */; };
+		F39292BB18B27DE900145433 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39292BA18B27DE900145433 /* Images.xcassets */; };
+		F39292C218B27DE900145433 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39292C118B27DE900145433 /* XCTest.framework */; };
+		F39292C318B27DE900145433 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39292A218B27DE900145433 /* Foundation.framework */; };
+		F39292C418B27DE900145433 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39292A618B27DE900145433 /* UIKit.framework */; };
+		F39292CC18B27DE900145433 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F39292CA18B27DE900145433 /* InfoPlist.strings */; };
+		F39292CE18B27DE900145433 /* MACTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F39292CD18B27DE900145433 /* MACTextFieldTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F39292C518B27DE900145433 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F392929718B27DE900145433 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F392929E18B27DE900145433;
+			remoteInfo = MACTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F392929F18B27DE900145433 /* MACTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MACTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39292A218B27DE900145433 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F39292A418B27DE900145433 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F39292A618B27DE900145433 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F39292AA18B27DE900145433 /* MACTextField-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MACTextField-Info.plist"; sourceTree = "<group>"; };
+		F39292AC18B27DE900145433 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F39292AE18B27DE900145433 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F39292B018B27DE900145433 /* MACTextField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MACTextField-Prefix.pch"; sourceTree = "<group>"; };
+		F39292B118B27DE900145433 /* MACAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MACAppDelegate.h; sourceTree = "<group>"; };
+		F39292B218B27DE900145433 /* MACAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MACAppDelegate.m; sourceTree = "<group>"; };
+		F39292B518B27DE900145433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F39292B718B27DE900145433 /* MACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MACViewController.h; sourceTree = "<group>"; };
+		F39292B818B27DE900145433 /* MACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MACViewController.m; sourceTree = "<group>"; };
+		F39292BA18B27DE900145433 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F39292C018B27DE900145433 /* MACTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MACTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39292C118B27DE900145433 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F39292C918B27DE900145433 /* MACTextFieldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MACTextFieldTests-Info.plist"; sourceTree = "<group>"; };
+		F39292CB18B27DE900145433 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F39292CD18B27DE900145433 /* MACTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MACTextFieldTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F392929C18B27DE900145433 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39292A518B27DE900145433 /* CoreGraphics.framework in Frameworks */,
+				F39292A718B27DE900145433 /* UIKit.framework in Frameworks */,
+				F39292A318B27DE900145433 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39292BD18B27DE900145433 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39292C218B27DE900145433 /* XCTest.framework in Frameworks */,
+				F39292C418B27DE900145433 /* UIKit.framework in Frameworks */,
+				F39292C318B27DE900145433 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F392929618B27DE900145433 = {
+			isa = PBXGroup;
+			children = (
+				F39292A818B27DE900145433 /* MACTextField */,
+				F39292C718B27DE900145433 /* MACTextFieldTests */,
+				F39292A118B27DE900145433 /* Frameworks */,
+				F39292A018B27DE900145433 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F39292A018B27DE900145433 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F392929F18B27DE900145433 /* MACTextField.app */,
+				F39292C018B27DE900145433 /* MACTextFieldTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F39292A118B27DE900145433 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F39292A218B27DE900145433 /* Foundation.framework */,
+				F39292A418B27DE900145433 /* CoreGraphics.framework */,
+				F39292A618B27DE900145433 /* UIKit.framework */,
+				F39292C118B27DE900145433 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F39292A818B27DE900145433 /* MACTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F39292B118B27DE900145433 /* MACAppDelegate.h */,
+				F39292B218B27DE900145433 /* MACAppDelegate.m */,
+				F39292B418B27DE900145433 /* Main.storyboard */,
+				F39292B718B27DE900145433 /* MACViewController.h */,
+				F39292B818B27DE900145433 /* MACViewController.m */,
+				F39292BA18B27DE900145433 /* Images.xcassets */,
+				F39292A918B27DE900145433 /* Supporting Files */,
+			);
+			path = MACTextField;
+			sourceTree = "<group>";
+		};
+		F39292A918B27DE900145433 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F39292AA18B27DE900145433 /* MACTextField-Info.plist */,
+				F39292AB18B27DE900145433 /* InfoPlist.strings */,
+				F39292AE18B27DE900145433 /* main.m */,
+				F39292B018B27DE900145433 /* MACTextField-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F39292C718B27DE900145433 /* MACTextFieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				F39292CD18B27DE900145433 /* MACTextFieldTests.m */,
+				F39292C818B27DE900145433 /* Supporting Files */,
+			);
+			path = MACTextFieldTests;
+			sourceTree = "<group>";
+		};
+		F39292C818B27DE900145433 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F39292C918B27DE900145433 /* MACTextFieldTests-Info.plist */,
+				F39292CA18B27DE900145433 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F392929E18B27DE900145433 /* MACTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F39292D118B27DE900145433 /* Build configuration list for PBXNativeTarget "MACTextField" */;
+			buildPhases = (
+				F392929B18B27DE900145433 /* Sources */,
+				F392929C18B27DE900145433 /* Frameworks */,
+				F392929D18B27DE900145433 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MACTextField;
+			productName = MACTextField;
+			productReference = F392929F18B27DE900145433 /* MACTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F39292BF18B27DE900145433 /* MACTextFieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F39292D418B27DE900145433 /* Build configuration list for PBXNativeTarget "MACTextFieldTests" */;
+			buildPhases = (
+				F39292BC18B27DE900145433 /* Sources */,
+				F39292BD18B27DE900145433 /* Frameworks */,
+				F39292BE18B27DE900145433 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F39292C618B27DE900145433 /* PBXTargetDependency */,
+			);
+			name = MACTextFieldTests;
+			productName = MACTextFieldTests;
+			productReference = F39292C018B27DE900145433 /* MACTextFieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F392929718B27DE900145433 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MAC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Madson Mac";
+				TargetAttributes = {
+					F39292BF18B27DE900145433 = {
+						TestTargetID = F392929E18B27DE900145433;
+					};
+				};
+			};
+			buildConfigurationList = F392929A18B27DE900145433 /* Build configuration list for PBXProject "MACTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F392929618B27DE900145433;
+			productRefGroup = F39292A018B27DE900145433 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F392929E18B27DE900145433 /* MACTextField */,
+				F39292BF18B27DE900145433 /* MACTextFieldTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F392929D18B27DE900145433 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39292BB18B27DE900145433 /* Images.xcassets in Resources */,
+				F39292AD18B27DE900145433 /* InfoPlist.strings in Resources */,
+				F39292B618B27DE900145433 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39292BE18B27DE900145433 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39292CC18B27DE900145433 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F392929B18B27DE900145433 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39292B318B27DE900145433 /* MACAppDelegate.m in Sources */,
+				F39292AF18B27DE900145433 /* main.m in Sources */,
+				F39292B918B27DE900145433 /* MACViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39292BC18B27DE900145433 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39292CE18B27DE900145433 /* MACTextFieldTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F39292C618B27DE900145433 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F392929E18B27DE900145433 /* MACTextField */;
+			targetProxy = F39292C518B27DE900145433 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F39292AB18B27DE900145433 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F39292AC18B27DE900145433 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F39292B418B27DE900145433 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F39292B518B27DE900145433 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F39292CA18B27DE900145433 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F39292CB18B27DE900145433 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F39292CF18B27DE900145433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F39292D018B27DE900145433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F39292D218B27DE900145433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MACTextField/MACTextField-Prefix.pch";
+				INFOPLIST_FILE = "MACTextField/MACTextField-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F39292D318B27DE900145433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MACTextField/MACTextField-Prefix.pch";
+				INFOPLIST_FILE = "MACTextField/MACTextField-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F39292D518B27DE900145433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MACTextField.app/MACTextField";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MACTextField/MACTextField-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MACTextFieldTests/MACTextFieldTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F39292D618B27DE900145433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MACTextField.app/MACTextField";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MACTextField/MACTextField-Prefix.pch";
+				INFOPLIST_FILE = "MACTextFieldTests/MACTextFieldTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F392929A18B27DE900145433 /* Build configuration list for PBXProject "MACTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39292CF18B27DE900145433 /* Debug */,
+				F39292D018B27DE900145433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F39292D118B27DE900145433 /* Build configuration list for PBXNativeTarget "MACTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39292D218B27DE900145433 /* Debug */,
+				F39292D318B27DE900145433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F39292D418B27DE900145433 /* Build configuration list for PBXNativeTarget "MACTextFieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39292D518B27DE900145433 /* Debug */,
+				F39292D618B27DE900145433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F392929718B27DE900145433 /* Project object */;
+}
