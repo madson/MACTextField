@@ -8,10 +8,10 @@
 
 #import "MACTextField.h"
 
-#define ANIMATION_DURATION 0.2f
+#define ANIMATION_DURATION 0.4f
 #define LABEL_FRAME CGRectMake(0.1, 2.0, self.frame.size.width, 20.0)
 #define TEXT_COLOR [UIColor lightGrayColor]
-#define FONT_SIZE 13
+#define FONT_SIZE 12
 
 @implementation MACTextField
 
