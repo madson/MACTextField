@@ -81,4 +81,22 @@
     [self textFieldTextDidChange:nil];
 }
 
+-(void)setError:(BOOL)error {
+    _error = error;
+    
+    if (self.validColor == nil) {
+        self.validColor = self.textColor;
+        
+    }
+    
+    if (error) {
+        self.textColor = self.errorColor;
+        
+    } else {
+        self.textColor = self.validColor;
+        
+    }
+    
+}
+
 @end
