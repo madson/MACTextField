@@ -15,4 +15,9 @@
 @property (nonatomic, strong) NSString * topPlaceholderText;
 @property (nonatomic, strong) UIColor * topPlaceholderTextColor;
 
+@property (nonatomic, strong) UIColor * errorColor;
+@property (nonatomic, strong) UIColor * validColor;
+
+@property (nonatomic) BOOL error;
+
 @end
