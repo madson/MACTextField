@@ -22,7 +22,7 @@
         [self setValue:_placeholderTextColor
             forKeyPath:@"_placeholderLabel.textColor"];
     }
-
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(textFieldTextDidChange:)
                                                  name:UITextFieldTextDidChangeNotification
@@ -91,11 +91,15 @@
     
     if (error) {
         self.textColor = self.errorColor;
+        _upperLabel.textColor = self.errorColor;
+        self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName: self.errorColor}];
         
     } else {
         self.textColor = self.validColor;
-        
+        _upperLabel.textColor = _topPlaceholderTextColor ? _topPlaceholderTextColor : TEXT_COLOR;
+        self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName: _upperLabel.textColor}];
     }
+    
     
 }
 
