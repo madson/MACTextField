@@ -55,7 +55,7 @@
         {
             UILabel *label = [[UILabel alloc] initWithFrame:LABEL_FRAME];
             label.font = [UIFont systemFontOfSize:FONT_SIZE];
-            label.textColor = _topPlaceholderTextColor ? _topPlaceholderTextColor : TEXT_COLOR;
+            label.textColor = _topPlaceholderTextColor ?: TEXT_COLOR;
             
             _upperLabel = label;
         }
@@ -71,6 +71,8 @@
                 _upperLabel.alpha = 1;
             }];
         }
+        
+        self.error = NO;
     }
 }
 
@@ -81,26 +83,25 @@
     [self textFieldTextDidChange:nil];
 }
 
--(void)setError:(BOOL)error {
+- (void)setError:(BOOL)error
+{
     _error = error;
     
     if (self.validColor == nil) {
         self.validColor = self.textColor;
-        
     }
     
     if (error) {
         self.textColor = self.errorColor;
         _upperLabel.textColor = self.errorColor;
         self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName: self.errorColor}];
-        
     } else {
         self.textColor = self.validColor;
-        _upperLabel.textColor = _topPlaceholderTextColor ? _topPlaceholderTextColor : TEXT_COLOR;
-        self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName: _upperLabel.textColor}];
+
+        NSDictionary *attributes = @{NSForegroundColorAttributeName: _topPlaceholderTextColor ?: TEXT_COLOR};
+        self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder
+                                                                     attributes:attributes];
     }
-    
-    
 }
 
 @end
