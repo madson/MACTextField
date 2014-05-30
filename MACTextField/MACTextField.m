@@ -94,13 +94,16 @@
     if (error) {
         self.textColor = self.errorColor;
         _upperLabel.textColor = self.errorColor;
-        self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName: self.errorColor}];
-    } else {
+        
+        NSDictionary *attributes = @{NSForegroundColorAttributeName: self.errorColor};
+        self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:attributes];
+    }
+    else {
         self.textColor = self.validColor;
-
+        _upperLabel.textColor = self.validColor;
+        
         NSDictionary *attributes = @{NSForegroundColorAttributeName: _topPlaceholderTextColor ?: TEXT_COLOR};
-        self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder
-                                                                     attributes:attributes];
+        self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:attributes];
     }
 }
 
